@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7124CA824525146009F5067 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7124CA724525146009F5067 /* NetworkWeatherManager.swift */; };
+		B7124CAB245253E9009F5067 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7124CAA245253E9009F5067 /* Constants.swift */; };
 		B71512FF244B28BA0074B43C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71512FE244B28BA0074B43C /* AppDelegate.swift */; };
 		B7151301244B28BA0074B43C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7151300244B28BA0074B43C /* SceneDelegate.swift */; };
 		B7151303244B28BA0074B43C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7151302244B28BA0074B43C /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7124CA724525146009F5067 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
+		B7124CAA245253E9009F5067 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B71512FB244B28BA0074B43C /* myWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71512FE244B28BA0074B43C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7151300244B28BA0074B43C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7124CA124523AEC009F5067 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B7124CAA245253E9009F5067 /* Constants.swift */,
+				B71512FE244B28BA0074B43C /* AppDelegate.swift */,
+				B7151300244B28BA0074B43C /* SceneDelegate.swift */,
+				B7151307244B28BB0074B43C /* Assets.xcassets */,
+				B715130C244B28BB0074B43C /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		B7124CA224523B1E009F5067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7151304244B28BA0074B43C /* Main.storyboard */,
+				B7151309244B28BB0074B43C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7124CA324523B50009F5067 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7151302244B28BA0074B43C /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B7124CA924525180009F5067 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7124CA724525146009F5067 /* NetworkWeatherManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B71512F2244B28B90074B43C = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +97,10 @@
 		B71512FD244B28BA0074B43C /* myWeather */ = {
 			isa = PBXGroup;
 			children = (
-				B71512FE244B28BA0074B43C /* AppDelegate.swift */,
-				B7151300244B28BA0074B43C /* SceneDelegate.swift */,
-				B7151302244B28BA0074B43C /* ViewController.swift */,
-				B7151304244B28BA0074B43C /* Main.storyboard */,
-				B7151307244B28BB0074B43C /* Assets.xcassets */,
-				B7151309244B28BB0074B43C /* LaunchScreen.storyboard */,
-				B715130C244B28BB0074B43C /* Info.plist */,
+				B7124CA924525180009F5067 /* Models */,
+				B7124CA124523AEC009F5067 /* Supporting files */,
+				B7124CA324523B50009F5067 /* View Controllers */,
+				B7124CA224523B1E009F5067 /* Views */,
 			);
 			path = myWeather;
 			sourceTree = "<group>";
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7124CAB245253E9009F5067 /* Constants.swift in Sources */,
 				B7151303244B28BA0074B43C /* ViewController.swift in Sources */,
 				B71512FF244B28BA0074B43C /* AppDelegate.swift in Sources */,
 				B7151301244B28BA0074B43C /* SceneDelegate.swift in Sources */,
+				B7124CA824525146009F5067 /* NetworkWeatherManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = myWeather/Info.plist;
+				INFOPLIST_FILE = "myWeather/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = myWeather/Info.plist;
+				INFOPLIST_FILE = "myWeather/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
