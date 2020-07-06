@@ -21,4 +21,10 @@ struct CurrentWeather {
     }
     let conditionCoide: Int
     
+    init?(currentWeatherData: CurrentWeatherData) {
+        cityName = currentWeatherData.name
+        temperature = currentWeatherData.main.temp
+        feelsLikeTemperature = currentWeatherData.main.feelsLike
+        conditionCoide = currentWeatherData.weather.first!.id
+    }
 }
