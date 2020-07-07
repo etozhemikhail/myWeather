@@ -19,8 +19,7 @@ extension ViewController {
             let textField = ac.textFields?.first
             guard let cityName = textField?.text else { return }
             if cityName != "" {
-                print("Search info fot the \(cityName)")
-                let city = cityName.split(separator: " ").joined(separator: "%20")
+                let city = cityName.split(separator: " ").joined(separator: "%20").split(separator: "-").joined(separator: "%20")
                 completionHandler(city)
             }
         }
